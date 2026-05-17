@@ -248,7 +248,7 @@ with c_left:
         if st.form_submit_button("제보하기"):
             if desc:
                 save_user_report(incident, desc, lat_in, lon_in)
-                st.success("현장 상황이 성공적으로 제보되었습니다!")
+                st.success("현장 상황이 성공적으로 제보되었습니다!!")
                 st.rerun()
             else:
                 st.warning("상세 내용을 입력해 주세요.")
