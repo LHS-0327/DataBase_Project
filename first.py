@@ -202,7 +202,7 @@ folium.Marker([st.session_state.dest_lat, st.session_state.dest_lon], tooltip="�
 folium.Marker([st.session_state.report_lat, st.session_state.report_lon], tooltip="제보할 위치", icon=folium.Icon(color='orange', icon='bullhorn', prefix='fa')).add_to(m)
 
 # 지도 출력
-out = st_folium(m, width=1200, height=500, key="safety_map")
+out = st_folium(m, use_container_width=True, height=700, key="safety_map")
 report_mode = st.toggle("📍 좌표 지정 모드 (지도 클릭 활성화)", value=False)
 
 # ✨ [수정] 클릭 모드에 따라 세 가지 좌표 중 하나를 업데이트
