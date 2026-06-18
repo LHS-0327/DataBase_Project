@@ -1,3 +1,4 @@
 st-supabase-connection
 folium
 streamlit-folium
+google-generativeai
